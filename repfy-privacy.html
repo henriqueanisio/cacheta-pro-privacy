@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — Repfy para Prestadores</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text: #1a1a1a;
+            --text-secondary: #555;
+            --accent: #2563eb;
+            --border: #e5e5e5;
+            --radius: 10px;
+            --max-w: 780px;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0d0d0d;
+                --card-bg: #171717;
+                --text: #e5e5e5;
+                --text-secondary: #999;
+                --accent: #60a5fa;
+                --border: #2a2a2a;
+            }
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: var(--max-w);
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 48px 0 32px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        header .updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 6px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 32px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin: 16px 0 8px;
+        }
+        p, li { font-size: 0.95rem; color: var(--text-secondary); }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            font-weight: 600;
+            color: var(--text);
+            background: var(--bg);
+        }
+        td { color: var(--text-secondary); }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 32px 0 48px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .card { padding: 20px 18px; }
+            header h1 { font-size: 1.5rem; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 8px 6px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Repfy para Prestadores — Última atualização: 16 de junho de 2026</p>
+</header>
+
+<!-- 1. Introdução -->
+<div class="card">
+    <h2>1. Introdução</h2>
+    <p>
+        O Repfy para Prestadores ("aplicativo", "nós") é uma plataforma de intermediação de serviços
+        que conecta prestadores a clientes. Esta Política de Privacidade descreve como coletamos,
+        usamos, armazenamos e protegemos os dados pessoais dos prestadores de serviço ("usuário",
+        "você") que utilizam o aplicativo, em conformidade com a
+        <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018)</strong>.
+    </p>
+    <p> Ao utilizar o aplicativo, você declara estar ciente e concordar com esta política.</p>
+</div>
+
+<!-- 2. Dados Coletados -->
+<div class="card">
+    <h2>2. Dados Coletados</h2>
+
+    <h3>2.1 Dados fornecidos por você</h3>
+    <table>
+        <thead>
+            <tr><th>Categoria</th><th>Exemplos</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Identificação</strong></td><td>Nome completo, CPF, data de nascimento</td></tr>
+            <tr><td><strong>Contato</strong></td><td>E-mail, telefone</td></tr>
+            <tr><td><strong>Profissionais</strong></td><td>Profissão, especialidades, experiência, certificações</td></tr>
+            <tr><td><strong>Financeiros</strong></td><td>Dados bancários para recebimento de pagamentos</td></tr>
+            <tr><td><strong>Documentos</strong></td><td>RG, comprovante de residência, certificados (enviados via câmera ou galeria)</td></tr>
+            <tr><td><strong>Imagens</strong></td><td>Foto de perfil, fotos dos serviços prestados</td></tr>
+            <tr><td><strong>Localização</strong></td><td>Endereço de atendimento, raio de cobertura</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2.2 Dados coletados automaticamente</h3>
+    <table>
+        <thead>
+            <tr><th>Categoria</th><th>Exemplos</th><th>Finalidade</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Localização</strong></td><td>GPS em tempo real (foreground e background)</td><td>Matching de pedidos próximos, cálculo de preço</td></tr>
+            <tr><td><strong>Dispositivo</strong></td><td>Modelo, OS, versão do app</td><td>Suporte técnico, compatibilidade</td></tr>
+            <tr><td><strong>Uso</strong></td><td>Telas acessadas, ações realizadas</td><td>Analytics e melhoria do app</td></tr>
+            <tr><td><strong>Conexão</strong></td><td>Status online/offline</td><td>Disponibilidade para pedidos</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2.3 Dados de terceiros</h3>
+    <ul>
+        <li><strong>Firebase (Google LLC):</strong> analytics de uso, crash reports</li>
+        <li><strong>OneSignal:</strong> notificações push</li>
+    </ul>
+</div>
+
+<!-- 3. Finalidades -->
+<div class="card">
+    <h2>3. Finalidades do Tratamento (Art. 7º, LGPD)</h2>
+    <table>
+        <thead>
+            <tr><th>Finalidade</th><th>Base Legal</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Cadastro e autenticação no aplicativo</td><td>Execução do contrato</td></tr>
+            <tr><td>Match entre prestador e pedidos de serviço</td><td>Execução do contrato</td></tr>
+            <tr><td>Cálculo de preço baseado em distância</td><td>Execução do contrato</td></tr>
+            <tr><td>Envio de notificações sobre pedidos disponíveis</td><td>Legítimo interesse</td></tr>
+            <tr><td>Processamento de pagamentos e carteira digital</td><td>Execução do contrato</td></tr>
+            <tr><td>Exibição do perfil do prestador aos clientes</td><td>Consentimento</td></tr>
+            <tr><td>Melhoria da plataforma e analytics</td><td>Legítimo interesse</td></tr>
+            <tr><td>Prevenção a fraudes e segurança</td><td>Obrigação legal</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- 4. Localização -->
+<div class="card">
+    <h2>4. Dados de Localização</h2>
+    <p>
+        O Repfy utiliza localização em <strong>primeiro plano</strong> e <strong>segundo plano</strong> para:
+    </p>
+    <ul>
+        <li>Encontrar pedidos de serviço próximos ao prestador</li>
+        <li>Calcular distância e preço de deslocamento</li>
+        <li>Permitir que clientes visualizem prestadores por proximidade</li>
+    </ul>
+    <p>
+        <strong>Controle do usuário:</strong> A localização pode ser desativada nas configurações do Android
+        (Configurações → Aplicativos → Repfy → Permissões → Localização). A desativação impede o
+        recebimento de novos pedidos.
+    </p>
+</div>
+
+<!-- 5. Compartilhamento -->
+<div class="card">
+    <h2>5. Compartilhamento de Dados</h2>
+    <table>
+        <thead>
+            <tr><th>Destinatário</th><th>Dados compartilhados</th><th>Finalidade</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Clientes do Repfy</td><td>Nome, foto, profissão, avaliações</td><td>Exibição no marketplace</td></tr>
+            <tr><td>Google (Firebase)</td><td>Dados de uso, crashes</td><td>Analytics</td></tr>
+            <tr><td>OneSignal</td><td>Token de push</td><td>Notificações</td></tr>
+            <tr><td>Instituições financeiras</td><td>Dados bancários</td><td>Pagamentos</td></tr>
+        </tbody>
+    </table>
+    <p> <strong>Não vendemos dados pessoais.</strong></p>
+    <p> Transferências internacionais (Firebase, OneSignal) seguem as garantias do Art. 33 da LGPD.</p>
+</div>
+
+<!-- 6. Armazenamento -->
+<div class="card">
+    <h2>6. Armazenamento e Retenção</h2>
+    <ul>
+        <li><strong>Banco de dados:</strong> servidores em nuvem com criptografia em repouso (AES-256)</li>
+        <li><strong>Dados em trânsito:</strong> HTTPS/TLS 1.3</li>
+        <li><strong>Dispositivo:</strong> cache local criptografado (MMKV), expurgado ao desinstalar</li>
+    </ul>
+    <table>
+        <thead>
+            <tr><th>Tipo de dado</th><th>Período de retenção</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Dados cadastrais</td><td>Durante a conta ativa + 5 anos</td></tr>
+            <tr><td>Dados financeiros</td><td>5 anos (obrigação fiscal)</td></tr>
+            <tr><td>Localização em tempo real</td><td>Até 24 horas (cache)</td></tr>
+            <tr><td>Dados de uso/análise</td><td>26 meses (Firebase)</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- 7. Direitos LGPD -->
+<div class="card">
+    <h2>7. Direitos do Titular (Art. 18, LGPD)</h2>
+    <p>Você pode exercer os seguintes direitos mediante solicitação ao e-mail de privacidade:</p>
+    <table>
+        <thead>
+            <tr><th>Direito</th><th>Descrição</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Confirmação</strong></td><td>Saber se tratamos seus dados</td></tr>
+            <tr><td><strong>Acesso</strong></td><td>Solicitar cópia dos dados armazenados</td></tr>
+            <tr><td><strong>Correção</strong></td><td>Corrigir dados incompletos ou desatualizados</td></tr>
+            <tr><td><strong>Anonimização</strong></td><td>Solicitar anonimização de dados desnecessários</td></tr>
+            <tr><td><strong>Portabilidade</strong></td><td>Transferir dados a outro fornecedor</td></tr>
+            <tr><td><strong>Eliminação</strong></td><td>Solicitar exclusão dos dados pessoais</td></tr>
+            <tr><td><strong>Revogação</strong></td><td>Revogar consentimento a qualquer momento</td></tr>
+            <tr><td><strong>Oposição</strong></td><td>Opor-se ao tratamento de dados</td></tr>
+        </tbody>
+    </table>
+    <p> <strong>Prazo de resposta:</strong> até 15 dias corridos.</p>
+</div>
+
+<!-- 8. Segurança -->
+<div class="card">
+    <h2>8. Segurança</h2>
+    <ul>
+        <li>Autenticação via JWT com tokens de curta duração</li>
+        <li>Senhas e dados bancários trafegam criptografados</li>
+        <li>Tokens armazenados exclusivamente no Keychain/Keystore do dispositivo</li>
+        <li>Conexão em tempo real via Socket.IO com TLS</li>
+        <li>Monitoramento contínuo contra acessos não autorizados</li>
+    </ul>
+</div>
+
+<!-- 9. Cookies -->
+<div class="card">
+    <h2>9. Cookies e Tecnologias Similares</h2>
+    <p>
+        O aplicativo não utiliza cookies de rastreamento em navegador. Utilizamos
+        <strong>MMKV</strong> (armazenamento local criptografado) para cache offline de dados
+        de catálogo e perfil. Nenhum dado desse cache é enviado a terceiros.
+    </p>
+</div>
+
+<!-- 10. Alterações -->
+<div class="card">
+    <h2>10. Alterações nesta Política</h2>
+    <p>
+        Alterações serão comunicadas via:
+    </p>
+    <ul>
+        <li>Notificação push dentro do aplicativo</li>
+        <li>Banner no primeiro acesso após a atualização</li>
+    </ul>
+    <p> A continuação do uso após a notificação implica aceitação da nova política.</p>
+</div>
+
+<!-- 11. Contato -->
+<div class="card">
+    <h2>11. Contato — Encarregado de Dados (DPO)</h2>
+    <p>
+        <strong>E-mail:</strong> <a href="mailto:[EMAIL DE CONTATO]">[EMAIL DE CONTATO]</a>
+    </p>
+    <p>
+        <strong>[NOME DA EMPRESA]</strong><br>
+        CNPJ: [CNPJ]<br>
+        Endereço: [ENDEREÇO COMPLETO]
+    </p>
+</div>
+
+<footer>
+    <p>
+        Repfy para Prestadores — Esta política foi elaborada em conformidade com a
+        Lei nº 13.709/2018 (LGPD) e o Marco Civil da Internet (Lei nº 12.965/2014).
+    </p>
+</footer>
+
+</div>
+
+</body>
+</html>
